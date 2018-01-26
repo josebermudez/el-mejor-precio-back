@@ -1,6 +1,6 @@
 <?php
 
-$url = getenv('JAWSDB_URL');
+$url = getenv('JAWSDB_MARIA_URL');
 $dbparts = parse_url($url);
 
 return [
@@ -46,7 +46,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', $dbparts['host']),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'mcysbhevl4zl1jsb'),
+            'database' => env('DB_DATABASE', ltrim($dbparts['path'],'/')),
             'username' => env('DB_USERNAME', $dbparts['user']),
             'password' => env('DB_PASSWORD', $dbparts['pass']),
             'unix_socket' => env('DB_SOCKET', ''),
