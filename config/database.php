@@ -46,7 +46,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', $dbparts['host']),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', ltrim($dbparts['path'],'/')),
+            'database' => env('DB_DATABASE', 'mcysbhevl4zl1jsb'),
             'username' => env('DB_USERNAME', $dbparts['user']),
             'password' => env('DB_PASSWORD', $dbparts['pass']),
             'unix_socket' => env('DB_SOCKET', ''),
