@@ -1,6 +1,7 @@
 <?php
 
 $url = getenv('JAWSDB_MARIA_URL');
+$url = 'mysql://apvgw6z9m0o3815p:dk21h2odlf2eodfm@er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mcysbhevl4zl1jsb';
 $dbparts = parse_url($url);
 
 return [

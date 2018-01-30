@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('productos', 'ProductoController@show')->middleware('auth');
+Route::get('productos', 'ProductoController@show');
